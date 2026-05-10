@@ -10,6 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: wasmerio/setup-wasmer@v3.1
-      - run: wasmer deploy --non-interactive
+      - run: wasmer deploy --non-interactive --build-remote
         env:
           WASMER_TOKEN: ${{ secrets.WASMER_TOKEN }}
