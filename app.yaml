@@ -1,4 +1,4 @@
 kind: wasmer.io/App.v0
-name: jeffreyheld-com
-owner: your-wasmer-username
+name: jeffreyheld
+owner: jeffheld
 package: .
