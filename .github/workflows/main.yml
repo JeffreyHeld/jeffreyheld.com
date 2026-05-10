@@ -1,0 +1,15 @@
+name: Deploy to Wasmer
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: wasmerio/setup-wasmer@v3.1
+      - run: wasmer deploy --non-interactive
+        env:
+          WASMER_TOKEN: ${{ secrets.WASMER_TOKEN }}
