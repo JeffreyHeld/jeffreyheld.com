@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
   <script>
     tailwind.config = {
       theme: {
@@ -84,6 +85,16 @@
       background-clip: text;
     }
 
+    /* Signature-style font for the navbar name */
+    .signature {
+      font-family: 'Great Vibes', cursive;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-weight: 400;
+      display: inline-block;
+      line-height: 1;
+    }
+
     .hero-bg {
       background: linear-gradient(160deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
     }
@@ -129,7 +140,7 @@
   <!-- Navigation -->
   <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" style="background: transparent;">
     <div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
-      <span class="text-white font-semibold text-lg tracking-wide">JH</span>
+  <span class="text-white signature text-lg">Jeffrey Held</span>
       <div class="hidden md:flex items-center gap-8">
         <a href="#about" class="nav-link text-slate-300 hover:text-white text-sm font-medium transition-colors duration-200">About</a>
         <a href="#expertise" class="nav-link text-slate-300 hover:text-white text-sm font-medium transition-colors duration-200">Expertise</a>
@@ -170,7 +181,7 @@
           <div class="relative">
             <div class="w-52 h-52 md:w-64 md:h-64 rounded-full overflow-hidden ring-4 ring-blue-500 ring-offset-4 ring-offset-slate-900 shadow-2xl">
               <img
-                src="images/jeffrey-held.png"
+                src="images/jeffrey-held1.png"
                 alt="Jeffrey Held"
                 class="w-full h-full object-cover object-top"
                 onerror="this.style.display='none'; this.parentElement.classList.add('bg-gradient-to-br','from-blue-600','to-cyan-500','flex','items-center','justify-center'); this.parentElement.innerHTML='<span class=\'text-white text-5xl font-bold\'>JH</span>';"
